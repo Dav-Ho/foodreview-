@@ -68,8 +68,9 @@ body{
 	float:left;
 }
 .top-nav-right{
+	display:inline-block;
 	float:right;
-	padding: 7px 10px;
+	border-left:1px solid #3D3D3D;
 }
 .top-nav-left ul li{
 	display:inline-block;
@@ -87,14 +88,15 @@ body{
 	text-transform: uppercase;
 	font-size: 0.875em;
 }
-.top-nav-left li.active a, .top-nav-left li a:hover {	
+.top-nav-left li.active a, .top-nav-left li a:hover {
 	background:#bd7f1c;
 }
 .top-header {
 	padding: 20px 0;
 }
+
 .top-nav-right input[type="submit"]{
-	background: url(../images/search-icon.png) no-repeat 42% 50% #bd7f1c;
+	background: url(../assets/search-icon.png) no-repeat 42% 50% #bd7f1c;
 	padding:14px 20px;
 	border: none;
 	display: block;
@@ -309,7 +311,7 @@ body{
 	background:#BD7F1C;
 }
 .bottom-last span{
-	color:#BD7F1C;	
+	color:#BD7F1C;
 }
 .gallery li a img{
 	display:block;
@@ -701,14 +703,14 @@ body{
 }
 .col:first-child{
 	margin-left:0;
-}	
+}
 .span_2_of_3 {
 	width: 63.1%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_3 {
 	width: 29.2%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_2_of_3  h3,
 .span_1_of_3  h3 {
@@ -750,7 +752,7 @@ body{
 }
 .contact-form textarea{
 		resize:none;
-		height:120px;		
+		height:120px;
 }
 .mybutton{
 	color: #FFF;
@@ -794,7 +796,7 @@ body{
 @media only screen and (max-width: 1024px) {
 	.wrap{
 		width:95%;
-	}	
+	}
 }
 /*  GO FULL WIDTH AT LESS THAN 800 PIXELS */
 
@@ -804,14 +806,14 @@ body{
 	}
 	.span_2_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
-	.col{ 
+	.col{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
 }
 
@@ -823,15 +825,15 @@ body{
 	}
 	.span_2_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
-	.col{ 
+	.col{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
 		width:94%;
-		padding:3%; 
-	} 
+		padding:3%;
+	}
    .contact-form input[type="text"],.contact-form textarea{
 		width:97%;
 	}
@@ -844,14 +846,14 @@ body{
 	}
 	.span_2_of_3 {
 		width:90%;
-		padding:5%; 
+		padding:5%;
 	}
-	.col { 
+	.col {
 		margin:0%;
 	}
 	.span_1_of_3 {
 		width:90%;
-		padding:5%; 
+		padding:5%;
 	}
 	.contact-form input[type="text"],.contact-form textarea{
 		width:92%;
@@ -1022,6 +1024,6 @@ body{
 	.gallery-grid a span{
 		line-height:3em;
 	}
-	
-	
+
+
 }
