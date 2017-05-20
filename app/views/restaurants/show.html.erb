@@ -1,0 +1,59 @@
+		
+		 <div class="content">
+		 	<!---start-gallery----->
+		 	<div class="gallerys">
+		 		<div class="wrap">
+					<h3>Here is your review analysis</h3>
+					<div class="gallery-grids">
+						<div class="gallery-grid">
+							<a href="#"><img src="/assets/slider1.jpg" alt=""></a>
+							<h4>Restaurant: <%= @restaurant.name %></h4>
+							<!-- <div class = "star-rating" data-score=<%= @avg_rating %>></div> -->
+							<h4>Address: <%=  @restaurant.address %></h4>
+							<h4>Category: <%=  @restaurant.category.name %></h4>
+							<h4>Zip Code: <%=  @restaurant.zipcode %></h4>
+							<h4>Description: <%=  @restaurant.description %></h4>
+
+					<h3>Reviews</h3>
+					<% if @reviews.blank? %>
+					<p>No reviews yet!</p>
+					<% else %>
+					  <table class= "table">
+						  <thead>
+								<tr>
+									<th class="col-mid-3"></th>
+									<th class="col-mid-9"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<% @reviews.each do |review| %>
+								<tr>
+									<td>
+										<h5><%= "#{review.user.email}" %></h5>
+									</td>
+									<td>
+										<div class="clearfix star-rating"=<%= review.rating %>></div>
+										<h4>Rating: <%= review.rating %> out of 5</h4>
+										<h4>Comment: <%= review.comment %></h4>
+									</td>
+								</tr>
+								<% end %>
+							</tbody>
+							</table>
+					<% end %>
+
+
+					<%= link_to "Write a Review", new_restaurant_review_path(@restaurant), class: "btn btn-default" %>
+
+
+
+					</div>
+
+					</div>
+				    <div class="clear"> </div>
+				    <div class="projects-bottom-paination">
+
+					</div>
+
+
+				</div>
