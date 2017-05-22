@@ -4,18 +4,18 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.label :email, class: 'form-control-label' %><br />
+    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true %>
+    <%= f.label :first_name, class: 'form-control-label' %><br />
+    <%= f.text_field :first_name, autofocus: true, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, autofocus: true %>
+    <%= f.label :last_name, class: 'form-control-label' %><br />
+    <%= f.text_field :last_name, autofocus: true, class: 'form-control' %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

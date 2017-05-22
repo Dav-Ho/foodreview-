@@ -1,4 +1,4 @@
-		
+
 		 <div class="content">
 		 	<!---start-gallery----->
 		 	<div class="gallerys">
@@ -29,7 +29,7 @@
 								<% @reviews.each do |review| %>
 								<tr>
 									<td>
-										<h5><%= "#{review.user.email}" %></h5>
+										<h5><%= "#{review.user.first_name} #{review.user.last_name}" %></h5>
 									</td>
 									<td>
 										<div class="clearfix star-rating"=<%= review.rating %>></div>
